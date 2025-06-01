@@ -1,11 +1,14 @@
 import Foo from "./components/Foo";
+import Navbar from "./components/Navbar";
 
 export default function App() {
-  return (
-    <>
-      <main>
-        <Foo/>
-      </main>
-    </>
-  );
+	return (
+		<>
+			<Navbar />
+
+			<main>
+				<Foo />
+			</main>
+		</>
+	);
 }
