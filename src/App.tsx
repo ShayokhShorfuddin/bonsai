@@ -6,7 +6,7 @@ export default function App() {
 		<>
 			<Navbar />
 
-			<main>
+			<main id="main">
 				<Foo />
 			</main>
 		</>

@@ -1,9 +1,18 @@
 import BonsaiLogo from "@/assets/bonsai-logo.svg";
+import Close from "@/assets/close.svg";
+import Menu from "@/assets/menu.svg";
 
 export default function Navbar() {
 	return (
 		<header>
 			<nav className="flex justify-between items-center mt-3 mx-5 text-sm">
+				<a
+					href="#main"
+					className="absolute top-0 left-0 -translate-x-full focus:translate-x-0 p-5 bg-green-500"
+				>
+					Skip to main content
+				</a>
+
 				{/* Logo and links */}
 				<ul className="flex gap-7 items-center">
 					<li>
@@ -11,7 +20,7 @@ export default function Navbar() {
 							<img src={BonsaiLogo} alt="Bonsai logo" className="w-28" />
 						</a>
 					</li>
-					<li>
+					<li className="hidden lg:block">
 						<a
 							href="/"
 							className="hover:text-neutral-400 transition-colors duration-300"
@@ -19,7 +28,7 @@ export default function Navbar() {
 							Products
 						</a>
 					</li>
-					<li>
+					<li className="hidden lg:block">
 						<a
 							href="/"
 							className="hover:text-neutral-400 transition-colors duration-300"
@@ -27,7 +36,7 @@ export default function Navbar() {
 							Solutions
 						</a>
 					</li>
-					<li>
+					<li className="hidden lg:block">
 						<a
 							href="/"
 							className="hover:text-neutral-400 transition-colors duration-300"
@@ -35,7 +44,7 @@ export default function Navbar() {
 							Resources
 						</a>
 					</li>
-					<li>
+					<li className="hidden lg:block">
 						<a
 							href="/"
 							className="hover:text-neutral-400 transition-colors duration-300"
@@ -43,7 +52,7 @@ export default function Navbar() {
 							Customer stories
 						</a>
 					</li>
-					<li>
+					<li className="hidden lg:block">
 						<a
 							href="/"
 							className="hover:text-neutral-400 transition-colors duration-300"
@@ -58,7 +67,7 @@ export default function Navbar() {
 					<li>
 						<a
 							href="/"
-							className="hover:text-neutral-400 transition-colors duration-300"
+							className="hidden lg:block hover:text-neutral-400 transition-colors duration-300"
 						>
 							Login
 						</a>
@@ -66,7 +75,7 @@ export default function Navbar() {
 					<li>
 						<button
 							type="button"
-							className="px-4 py-2.5 border border-neutral-300 rounded-full hover:bg-neutral-950 hover:text-white transition-colors duration-200 cursor-pointer"
+							className="hidden lg:block px-4 py-2.5 border border-neutral-300 rounded-full hover:bg-neutral-950 hover:text-white transition-colors duration-200 cursor-pointer"
 						>
 							Book a demo
 						</button>
@@ -74,9 +83,25 @@ export default function Navbar() {
 					<li>
 						<button
 							type="button"
-							className="px-4 py-2.5 bg-neutral-950 rounded-full text-white cursor-pointer"
+							className="hidden xs:block px-4 py-2.5 bg-neutral-950 rounded-full text-white cursor-pointer focus:ring-4 focus:ring-green-500 focus:outline-none"
 						>
 							Get started
+						</button>
+					</li>
+					<li>
+						<button
+							type="button"
+							className="lg:hidden py-2.5 px-2 hover:cursor-pointer"
+						>
+							<img src={Menu} alt="Show menu" />
+						</button>
+					</li>
+					<li>
+						<button
+							type="button"
+							className="lg:hidden py-2.5 px-2 hover:cursor-pointer"
+						>
+							<img src={Close} alt="Close menu" />
 						</button>
 					</li>
 				</ul>
