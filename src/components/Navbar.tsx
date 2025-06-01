@@ -122,7 +122,7 @@ export default function Navbar() {
 function NavbarDropdown({ isMenuOpen }: { isMenuOpen: boolean }) {
 	return (
 		<ul
-			className={`absolute lg:hidden flex flex-col left-0 top-15 w-full h-svh text-lg font-medium gap-y-6 ${!isMenuOpen && "hidden"} z-10 text-center px-5`}
+			className={`absolute lg:hidden flex flex-col left-0 top-15 w-full h-svh text-lg font-medium gap-y-6 ${!isMenuOpen && "hidden"} z-10 text-center px-5 bg-white`}
 		>
 			<li className="mt-10">
 				<a
