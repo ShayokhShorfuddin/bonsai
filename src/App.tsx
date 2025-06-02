@@ -1,3 +1,4 @@
+import CTA from "./components/CTA";
 import ClientManagement from "./components/ClientManagement";
 import Companies from "./components/Companies";
 import FinancialManagement from "./components/FinancialManagement";
@@ -22,6 +23,7 @@ export default function App() {
 				<Testimonials />
 				<Smarter />
 				<Platform />
+				<CTA />
 			</main>
 		</>
 	);
