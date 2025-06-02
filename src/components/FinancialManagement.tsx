@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 export default function FinancialManagement() {
 	return (
-		<section className="mt-[12rem] px-10">
+		<section className="mt-[12rem] px-5 sm:px-10">
 			<div className="flex flex-col lg:flex-row items-center text-center lg:text-left justify-between gap-10">
 				{/* Texts */}
 				<div>

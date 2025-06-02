@@ -4,6 +4,7 @@ import FinancialManagement from "./components/FinancialManagement";
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 import ProjectManagement from "./components/ProjectManagement";
+import Testimonials from "./components/Testimonials";
 
 export default function App() {
 	return (
@@ -16,6 +17,7 @@ export default function App() {
 				<ClientManagement />
 				<ProjectManagement />
 				<FinancialManagement />
+				<Testimonials />
 			</main>
 		</>
 	);

@@ -8,7 +8,7 @@ export default function Navbar() {
 
 	return (
 		<header>
-			<nav className="flex justify-between items-center mt-3 mx-10 text-sm">
+			<nav className="flex justify-between items-center mt-3 px-5 sm:mx-10 text-sm">
 				<a
 					href="#main"
 					className="absolute top-0 left-0 -translate-x-full focus:translate-x-0 p-5 bg-green-500"
