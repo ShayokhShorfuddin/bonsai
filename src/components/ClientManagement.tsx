@@ -31,7 +31,7 @@ export default function ClientManagement() {
 
 					<button
 						type="button"
-						className="bg-neutral-950 text-white px-5 py-3 rounded-full font-medium mt-7 hover:cursor-pointer"
+						className="bg-neutral-950 text-white px-5 py-3 rounded-full font-medium mt-7 hover:cursor-pointer focus:ring-4 focus:ring-green-500 focus:outline-none"
 					>
 						Get Started
 					</button>

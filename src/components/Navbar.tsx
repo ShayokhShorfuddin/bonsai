@@ -10,12 +10,12 @@ export default function Navbar() {
 		<header>
 			<a
 				href="#main"
-				className="absolute top-0 left-0 z-10 -translate-x-full focus:translate-x-0 p-5 bg-green-500"
+				className="absolute top-0 left-0 z-40 -translate-x-full focus:translate-x-0 p-5 bg-green-500"
 			>
 				Skip to main content
 			</a>
 
-			<nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-3 px-5 sm:px-10 text-sm bg-white/70 backdrop-blur-[15px]">
+			<nav className="fixed top-0 left-0 right-0 z-30 flex justify-between items-center py-3 px-5 sm:px-10 text-sm bg-white/70 backdrop-blur-[15px]">
 				{/* Logo and links */}
 				<ul className="flex gap-7 items-center">
 					<li>

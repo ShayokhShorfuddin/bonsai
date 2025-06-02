@@ -13,7 +13,7 @@ export default function CTA() {
 			<div className="flex flex-col xs:flex-row items-center mt-8 gap-x-5 gap-y-2.5">
 				<button
 					type="button"
-					className="bg-neutral-950 text-white px-5 py-3 rounded-full font-medium hover:cursor-pointer"
+					className="bg-neutral-950 text-white px-5 py-3 rounded-full font-medium hover:cursor-pointer focus:ring-4 focus:ring-green-500 focus:outline-none"
 				>
 					Get Started
 				</button>
