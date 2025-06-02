@@ -8,14 +8,14 @@ export default function Navbar() {
 
 	return (
 		<header>
-			<nav className="flex justify-between items-center mt-3 px-5 sm:mx-10 text-sm">
-				<a
-					href="#main"
-					className="absolute top-0 left-0 -translate-x-full focus:translate-x-0 p-5 bg-green-500"
-				>
-					Skip to main content
-				</a>
+			<a
+				href="#main"
+				className="absolute top-0 left-0 z-10 -translate-x-full focus:translate-x-0 p-5 bg-green-500"
+			>
+				Skip to main content
+			</a>
 
+			<nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-3 px-5 sm:px-10 text-sm bg-white/70 backdrop-blur-[15px]">
 				{/* Logo and links */}
 				<ul className="flex gap-7 items-center">
 					<li>
