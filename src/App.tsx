@@ -1,4 +1,5 @@
-import Foo from "./components/Foo";
+import Companies from "./components/Companies";
+import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 
 export default function App() {
@@ -7,7 +8,8 @@ export default function App() {
 			<Navbar />
 
 			<main id="main">
-				<Foo />
+				<Landing />
+				<Companies />
 			</main>
 		</>
 	);

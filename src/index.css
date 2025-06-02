@@ -9,3 +9,27 @@ body {
 @theme {
 	--breakpoint-xs: 30rem;
 }
+
+@theme {
+	--animate-feature-marque: feature-marque 30s linear infinite;
+
+	@keyframes feature-marque {
+		to {
+			transform: translateX(calc(-100% - 2rem));
+		}
+	}
+}
+
+@theme {
+	--animate-company-marque: company-marque 15s linear infinite;
+
+	@keyframes company-marque {
+		to {
+			transform: translateX(calc(-100% - 2rem));
+		}
+	}
+}
+
+@utility animate-pause {
+	animation-play-state: paused;
+}
