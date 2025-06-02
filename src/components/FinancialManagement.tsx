@@ -1,31 +1,31 @@
-import ProjectsProgress from "@/assets/projects-progress.png";
+import Budget from "@/assets/budget.png";
 import {
+	BookCheck,
 	ChartBar,
-	CheckCircle,
+	CreditCard,
 	DollarSign,
-	LucideAudioLines,
-	ReceiptPoundSterlingIcon,
-	Sheet,
-	TimerIcon,
-	Users,
+	HandCoins,
+	IdCard,
+	Rotate3DIcon,
 } from "lucide-react";
-export default function ProjectManagement() {
+export default function FinancialManagement() {
 	return (
 		<section className="mt-[12rem] px-10">
 			<div className="flex flex-col lg:flex-row items-center text-center lg:text-left justify-between gap-10">
 				{/* Texts */}
 				<div>
-					<p className="text-neutral-600">Project Management</p>
+					<p className="text-neutral-600">Financial Management</p>
 
 					<p className="mt-7 text-4xl md:text-5xl font-medium">
-						Deliver projects on time and budget
+						Track revenue & simplify billing
 					</p>
 
 					<p className="text-neutral-500 mt-7">
 						<span className="font-semibold text-neutral-950">
-							Organize and monitor your project delivery
+							Get financial clarity
 						</span>{" "}
-						with integrated tools that your team will love using.
+						with detailed reports, recurring payments and streamlined retainer
+						management
 					</p>
 
 					<Features />
@@ -39,7 +39,7 @@ export default function ProjectManagement() {
 				</div>
 
 				{/* Images */}
-				<img src={ProjectsProgress} alt="" className="w-2xl rounded-lg h-min" />
+				<img src={Budget} alt="" className="w-2xl rounded-lg h-min" />
 			</div>
 		</section>
 	);
@@ -47,14 +47,13 @@ export default function ProjectManagement() {
 
 function Features() {
 	const features = [
-		{ icon: CheckCircle, label: "Tasks" },
-		{ icon: ChartBar, label: "Gantt Chart" },
-		{ icon: TimerIcon, label: "Time Tracking" },
+		{ icon: BookCheck, label: "Invoicing" },
+		{ icon: HandCoins, label: "Payments" },
+		{ icon: IdCard, label: "Rate cards" },
 		{ icon: DollarSign, label: "Budgets" },
-		{ icon: Sheet, label: "Timesheets" },
-		{ icon: Users, label: "Client Portal" },
-		{ icon: ReceiptPoundSterlingIcon, label: "Reports" },
-		{ icon: LucideAudioLines, label: "Resource Planning" },
+		{ icon: CreditCard, label: "Expenses" },
+		{ icon: ChartBar, label: "Forecasting" },
+		{ icon: Rotate3DIcon, label: "Integrations" },
 	];
 
 	return (
