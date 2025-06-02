@@ -1,30 +1,31 @@
-import Deals from "@/assets/deals.png";
+import Budget from "@/assets/budget.png";
 import {
-	Book,
-	CircleDollarSignIcon,
-	Code2Icon,
-	Handshake,
-	Paperclip,
-	User,
+	ChartBar,
+	CheckCircle,
+	DollarSign,
+	LucideAudioLines,
+	ReceiptPoundSterlingIcon,
+	Sheet,
+	TimerIcon,
 	Users,
 } from "lucide-react";
-export default function ClientManagement() {
+export default function ProjectManagement() {
 	return (
 		<section className="mt-[12rem] px-10">
 			<div className="flex flex-col lg:flex-row items-center text-center lg:text-left justify-between gap-10">
 				{/* Texts */}
 				<div>
-					<p className="text-neutral-600">Client Management</p>
+					<p className="text-neutral-600">Project Management</p>
 
 					<p className="mt-7 text-4xl md:text-5xl font-medium">
-						Streamline your client workflow
+						Deliver projects on time and budget
 					</p>
 
 					<p className="text-neutral-500 mt-7">
 						<span className="font-semibold text-neutral-950">
-							Manage leads and automate your client workflow
+							Organize and monitor your project delivery
 						</span>{" "}
-						while delivering a top-notch experience.
+						with integrated tools that your team will love using.
 					</p>
 
 					<Features />
@@ -38,7 +39,7 @@ export default function ClientManagement() {
 				</div>
 
 				{/* Images */}
-				<img src={Deals} alt="" className="w-2xl rounded-lg h-min" />
+				<img src={Budget} alt="" className="w-2xl rounded-lg h-min" />
 			</div>
 		</section>
 	);
@@ -46,15 +47,14 @@ export default function ClientManagement() {
 
 function Features() {
 	const features = [
-		{ icon: User, label: "CRM" },
-		{ icon: Handshake, label: "Deals" },
-		{ icon: CircleDollarSignIcon, label: "Estimates" },
-		{ icon: Paperclip, label: "Proposals" },
-		{ icon: Book, label: "Contracts" },
-		{ icon: User, label: "Retainers" },
-		{ icon: Book, label: "Forms" },
+		{ icon: CheckCircle, label: "Tasks" },
+		{ icon: ChartBar, label: "Gantt Chart" },
+		{ icon: TimerIcon, label: "Time Tracking" },
+		{ icon: DollarSign, label: "Budgets" },
+		{ icon: Sheet, label: "Timesheets" },
 		{ icon: Users, label: "Client Portal" },
-		{ icon: Code2Icon, label: "Automation" },
+		{ icon: ReceiptPoundSterlingIcon, label: "Reports" },
+		{ icon: LucideAudioLines, label: "Resource Planning" },
 	];
 
 	return (

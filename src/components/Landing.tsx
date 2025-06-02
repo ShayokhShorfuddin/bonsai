@@ -30,7 +30,7 @@ import {
 
 export default function Landing() {
 	return (
-		<section aria-label="Landing section" className="mt-10 px-5">
+		<section aria-label="Landing section" className="mt-10 px-10">
 			<p className="text-sm text-neutral-500 font-medium text-center">
 				Welcome to Bonsai
 			</p>
