@@ -140,13 +140,13 @@ function CardsGrid() {
 		},
 	];
 
-	// TODO: Fix staircase and image overflow issues on smaller screens
+	// TODO: Fix image overflow issues on smaller screens
 	return (
 		<div className="grid grid-cols-1 lg:grid-cols-3 gap-2 mt-10">
 			{cardsData.map((card) => (
 				<div key={card.title} className="flex flex-col group">
 					{/* Texts */}
-					<div className="p-5">
+					<div className="p-5 flex-1">
 						<p className="text-xl font-medium">{card.title}</p>
 						<p className="text-md font-medium text-neutral-500 mt-4">
 							{card.description}
