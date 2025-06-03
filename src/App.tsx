@@ -1,6 +1,7 @@
 import CTA from "./components/CTA";
 import ClientManagement from "./components/ClientManagement";
 import Companies from "./components/Companies";
+import Consolidate from "./components/Consolidate";
 import FinancialManagement from "./components/FinancialManagement";
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
@@ -24,6 +25,7 @@ export default function App() {
 				<Smarter />
 				<Platform />
 				<CTA />
+				<Consolidate />
 			</main>
 		</>
 	);
