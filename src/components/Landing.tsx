@@ -140,7 +140,6 @@ function CardsGrid() {
 		},
 	];
 
-	// TODO: Fix image overflow issues on smaller screens
 	return (
 		<div className="grid grid-cols-1 lg:grid-cols-3 gap-2 mt-10">
 			{cardsData.map((card) => (
@@ -158,7 +157,7 @@ function CardsGrid() {
 						<img
 							src={card.image}
 							alt=""
-							className="absolute z-10 max-w-3/4 rounded-t-lg bottom-0 left-1/2 transform -translate-x-1/2 group-hover:scale-105 transition-transform duration-300"
+							className="absolute z-10 max-w-3/4 rounded-t-lg bottom-0 left-1/2 transform -translate-x-1/2 group-hover:scale-105 transition-transform duration-300 xs:max-h-50 lg:max-h-70"
 						/>
 
 						<div className="absolute inset-0 w-full h-full bg-[#e9e7e3] transition-opacity duration-400 group-hover:opacity-0" />
