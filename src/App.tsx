@@ -3,6 +3,7 @@ import ClientManagement from "./components/ClientManagement";
 import Companies from "./components/Companies";
 import Consolidate from "./components/Consolidate";
 import FinancialManagement from "./components/FinancialManagement";
+import Footer from "./components/Footer";
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 import Platform from "./components/Platform";
@@ -26,6 +27,7 @@ export default function App() {
 				<Platform />
 				<CTA />
 				<Consolidate />
+				<Footer />
 			</main>
 		</>
 	);

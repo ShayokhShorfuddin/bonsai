@@ -35,9 +35,9 @@ export default function Landing() {
 				Welcome to Bonsai
 			</p>
 
-			<p className="text-4xl md:text-6xl font-medium text-center mt-5 max-w-2xl mx-auto">
+			<h1 className="text-4xl md:text-6xl font-medium text-center mt-5 max-w-2xl mx-auto">
 				The unified platform for service businesses
-			</p>
+			</h1>
 
 			<p className="text-center mt-7 text-sm md:text-base">
 				Consolidate your projects, clients, and billing operations into one{" "}
